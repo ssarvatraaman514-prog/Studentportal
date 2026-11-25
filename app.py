@@ -31,7 +31,7 @@ def home():
     students = conn.execute('SELECT * FROM students').fetchall()
     conn.close()
     return render_template_string(STYLE + '''
-    <div class="box"><h1>📚 Students Portal</h1><p style="text-align:center">Admin - Wife Only</p>
+    <div class="box"><h1>📚 Students Portal</h1><p style="text-align:center">Admin - Admin Only</p>
     <form method="POST">
       <input name="name" placeholder="Student Ka Naam" required>
       <input name="course" placeholder="Class / Course" required>
